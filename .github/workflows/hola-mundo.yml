@@ -1,0 +1,20 @@
+name: Hola Mundo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-hola:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Ejecutar script Hola Mundo
+        run: |
+          chmod +x hola.sh
+          ./hola.sh
