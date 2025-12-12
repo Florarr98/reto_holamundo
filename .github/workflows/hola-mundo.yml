@@ -16,5 +16,5 @@ jobs:
 
       - name: Ejecutar script Hola Mundo
         run: |
-          chmod +x hola.sh
+          chmod +x holamundo.sh
           ./holamundo.sh
